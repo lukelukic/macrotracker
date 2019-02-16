@@ -1,0 +1,14 @@
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\MacroTracker.Users.Application.deps.json
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\MacroTracker.Users.Application.dll
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\MacroTracker.Users.Application.pdb
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\EventBus.dll
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\MacroTracker.Users.Domain.dll
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\EventBus.pdb
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\bin\Debug\netcoreapp2.2\MacroTracker.Users.Domain.pdb
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.csprojAssemblyReference.cache
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.csproj.CoreCompileInputs.cache
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.AssemblyInfoInputs.cache
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.AssemblyInfo.cs
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.csproj.CopyComplete
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.dll
+D:\macrotracker\MacroTracker\MacroTracker.Users.Application\obj\Debug\netcoreapp2.2\MacroTracker.Users.Application.pdb

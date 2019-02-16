@@ -1,0 +1,9 @@
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\bin\Debug\netcoreapp2.2\MacroTracker.Users.Domain.deps.json
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\bin\Debug\netcoreapp2.2\MacroTracker.Users.Domain.dll
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\bin\Debug\netcoreapp2.2\MacroTracker.Users.Domain.pdb
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.csproj.CoreCompileInputs.cache
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.AssemblyInfoInputs.cache
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.AssemblyInfo.cs
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.dll
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.pdb
+D:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.csprojAssemblyReference.cache

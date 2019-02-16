@@ -1,0 +1,14 @@
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\bin\Debug\netcoreapp2.2\MacroTracker.ApiGateway.deps.json
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\bin\Debug\netcoreapp2.2\MacroTracker.ApiGateway.runtimeconfig.json
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\bin\Debug\netcoreapp2.2\MacroTracker.ApiGateway.runtimeconfig.dev.json
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\bin\Debug\netcoreapp2.2\MacroTracker.ApiGateway.dll
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\bin\Debug\netcoreapp2.2\MacroTracker.ApiGateway.pdb
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.csprojAssemblyReference.cache
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.csproj.CoreCompileInputs.cache
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.RazorAssemblyInfo.cache
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.RazorAssemblyInfo.cs
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.AssemblyInfoInputs.cache
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.AssemblyInfo.cs
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.RazorTargetAssemblyInfo.cache
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.dll
+D:\macrotracker\MacroTracker\MacroTracker.ApiGateway\obj\Debug\netcoreapp2.2\MacroTracker.ApiGateway.pdb

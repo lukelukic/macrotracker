@@ -1,0 +1,17 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "RabbitMQ": {
+    "host": "localhost",
+    "username": "luke",
+    "password": "qwe123LL"
+  },
+  "ConnectionStrings": {
+    "SqlServer": "Data Source=.\\SQL-534342;Username=prod;Password=123123lekrjwlkef;Initial Catalog=macrotracker-users;Integrated Security=True"
+  }
+}

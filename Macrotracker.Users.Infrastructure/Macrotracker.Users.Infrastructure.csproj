@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120121308_removed-role-table.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120121308_removed-role-table.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120122523_removed roleTable, added trainer inhherited from user.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120122523_removed roleTable, added trainer inhherited from user.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120122933_fix-relationship.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120122933_fix-relationship.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120123634_fix-relationship-trainerid.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120123634_fix-relationship-trainerid.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120123712_fix-relationship-trainerid.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120123712_fix-relationship-trainerid.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120125235_proba.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120125235_proba.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120125408_proba1.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120125408_proba1.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120125733_restrict-join-ids.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120125733_restrict-join-ids.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120130622_restrict-join-ids.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120130622_restrict-join-ids.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120131716_..cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120131716_..Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120132900_test.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120132900_test.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120133011_nullable-guid.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120133011_nullable-guid.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120133644_cascade-restrict.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120133644_cascade-restrict.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120232328_traienr-config.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190120232328_traienr-config.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124155704_added-requests-table.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124155704_added-requests-table.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124155841_added-requests-table.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124155841_added-requests-table.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124155959_added-requests-table.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124155959_added-requests-table.Designer.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124160112_added-requests-table.cs" />
+    <Compile Remove="DataAccess\EfDataAccess\Migrations\20190124160112_added-requests-table.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MacroTracker.Users.Application\MacroTracker.Users.Application.csproj" />
+    <ProjectReference Include="..\MacroTracker.Users.Domain\MacroTracker.Users.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore.relational\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DataAccess\EfDataAccess\Migrations\20190106203625_Initial.Designer.cs">
+      <DependentUpon>20190106203625_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Update="DataAccess\EfDataAccess\Migrations\20190120133809_cascade-restrict.Designer.cs">
+      <DependentUpon>20190120133809_cascade-restrict.cs</DependentUpon>
+    </Compile>
+    <Compile Update="DataAccess\EfDataAccess\Migrations\20190124160315_added-requests-table.Designer.cs">
+      <DependentUpon>20190124160315_added-requests-table.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

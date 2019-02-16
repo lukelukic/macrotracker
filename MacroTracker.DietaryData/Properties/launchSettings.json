@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59240",
+      "sslPort": 44304
+    }
+  },
+  "profiles": {
+    "Dev": {
+      "commandName": "Project", //bira web server koji ce da koristi Project -- Kestrel, IIS Express, IIS su opcije
+      "launchBrowser": false,
+      "launchUrl": "api/data",
+      "applicationUrl": "http://localhost:5100",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Prod": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "launchUrl": "api/data",
+      "applicationUrl": "http://localhost:5101",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    }
+  }
+}
