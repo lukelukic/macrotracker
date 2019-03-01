@@ -1,0 +1,13 @@
+S
+QD:\macrotracker\MacroTracker\MacroTracker.Emails\Extensions\EventBusExtensions.csM
+KD:\macrotracker\MacroTracker\MacroTracker.Emails\Interfaces\IEmailSender.csO
+MD:\macrotracker\MacroTracker\MacroTracker.Emails\MailHandlers\EmailHandler.csb
+`D:\macrotracker\MacroTracker\MacroTracker.Emails\MailHandlers\UserDeactivatedEventMailHandler.csa
+_D:\macrotracker\MacroTracker\MacroTracker.Emails\MailHandlers\UserRegisteredEventMailHandler.csJ
+HD:\macrotracker\MacroTracker\MacroTracker.Emails\Options\EmailOptions.cs=
+;D:\macrotracker\MacroTracker\MacroTracker.Emails\Program.csL
+JD:\macrotracker\MacroTracker\MacroTracker.Emails\Senders\SmtpMailSender.cs=
+;D:\macrotracker\MacroTracker\MacroTracker.Emails\Startup.csS
+OC:\Users\Luka\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csu
+qD:\macrotracker\MacroTracker\MacroTracker.Emails\obj\Debug\netcoreapp2.2\MacroTracker.Emails.RazorAssemblyInfo.csp
+lD:\macrotracker\MacroTracker\MacroTracker.Emails\obj\Debug\netcoreapp2.2\MacroTracker.Emails.AssemblyInfo.cs

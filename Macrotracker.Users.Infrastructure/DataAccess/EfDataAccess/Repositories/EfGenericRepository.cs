@@ -12,7 +12,7 @@ namespace Macrotracker.Users.Infrastructure.DataAccess.EfDataAccess.Repositories
     {
         protected UsersDbContext Context { get; }
 
-        public EfGenericRepository(UsersDbContext context) => Context = context;
+        protected EfGenericRepository(UsersDbContext context) => Context = context;
 
         public virtual T Add(T entity)
         {
@@ -33,7 +33,7 @@ namespace Macrotracker.Users.Infrastructure.DataAccess.EfDataAccess.Repositories
             Delete(entity);
         }
 
-        public virtual IEnumerable<T> Get(Expression<Func<T, bool>> predicate, int perPage = 50, int pageNumber = 1)
+        public virtual IEnumerable<T> Get(Expression<Func<T, bool>> predicate, int perPage, int pageNumber)
             => Context.Set<T>().Where(predicate).Take(perPage).Skip((pageNumber - 1) * perPage);
 
         public virtual IEnumerable<T> Get(Expression<Func<T, bool>> predicate) => Context.Set<T>().Where(predicate);

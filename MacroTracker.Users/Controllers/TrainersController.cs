@@ -4,6 +4,7 @@ using MacroTracker.Users.Application.UseCases.RegisterTrainer;
 using MacroTracker.Users.Application.UseCases.Trainers.DeactivateTrainer;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -14,16 +15,12 @@ namespace MacroTracker.Users.Api.Controllers
     [ApiController]
     public class TrainersController : BaseApiController
     {
-        public TrainersController(IMediator mediator) : base(mediator)
-        {
-        }
+        private readonly ILogger<TrainersController> _logger;
+        public TrainersController(IMediator mediator, ILogger<TrainersController> logger) : base(mediator) => _logger = logger;
 
         // GET: api/Trainers
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        public IEnumerable<string> Get() => new string[] { "value1", "value2" };
 
         // GET: api/Trainers/5
         [HttpGet("{id}", Name = "Get")]
@@ -34,15 +31,18 @@ namespace MacroTracker.Users.Api.Controllers
 
         // POST: api/Trainers
         [HttpPost]
-        public async void Post([FromBody] RegisterTrainerRequest request)
+        public async Task<IActionResult> Post([FromBody] RegisterTrainerRequest request)
         {
             try
             {
                 await Mediator.Send(request);
+                return Ok();
             }
-            catch (EntityAlreadyExists e)
+            catch (EntityAlreadyExistsException e)
             {
+                _logger.LogError(e.Message);
                 Response.StatusCode = 400;
+                return BadRequest(e.Message);
             }
         }
 

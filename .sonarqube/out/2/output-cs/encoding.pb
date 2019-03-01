@@ -1,0 +1,10 @@
+Z
+QD:\macrotracker\MacroTracker\MacroTracker.Emails\Extensions\EventBusExtensions.csutf-8T
+KD:\macrotracker\MacroTracker\MacroTracker.Emails\Interfaces\IEmailSender.csutf-8V
+MD:\macrotracker\MacroTracker\MacroTracker.Emails\MailHandlers\EmailHandler.csutf-8i
+`D:\macrotracker\MacroTracker\MacroTracker.Emails\MailHandlers\UserDeactivatedEventMailHandler.csutf-8h
+_D:\macrotracker\MacroTracker\MacroTracker.Emails\MailHandlers\UserRegisteredEventMailHandler.csutf-8Q
+HD:\macrotracker\MacroTracker\MacroTracker.Emails\Options\EmailOptions.csutf-8D
+;D:\macrotracker\MacroTracker\MacroTracker.Emails\Program.csutf-8S
+JD:\macrotracker\MacroTracker\MacroTracker.Emails\Senders\SmtpMailSender.csutf-8D
+;D:\macrotracker\MacroTracker\MacroTracker.Emails\Startup.csutf-8

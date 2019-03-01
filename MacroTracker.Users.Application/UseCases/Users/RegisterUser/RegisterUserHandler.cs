@@ -22,13 +22,13 @@ namespace MacroTracker.Users.Application.UseCases
             _repo = repo;
         }
 
-        public async Task<Unit> Handle(RegisterUserUseCase request, CancellationToken cancellationToken)
+        public Task<Unit> Handle(RegisterUserUseCase request, CancellationToken cancellationToken)
         {
             if (_repo.Get(u => u.Email.ToLower() == request.Email.ToLower()).Any())
-                throw new EntityAlreadyExists($"{request.Email} is already in use.");
+                throw new EntityAlreadyExistsException($"{request.Email} is already in use.");
 
             if (_repo.Get(u => u.Username.ToLower() == request.Username.ToLower()).Any())
-                throw new EntityAlreadyExists($"{request.Username} is already in use.");
+                throw new EntityAlreadyExistsException($"{request.Username} is already in use.");
 
             _repo.Add(new User
             {
@@ -48,7 +48,7 @@ namespace MacroTracker.Users.Application.UseCases
                 Username = request.Username
             });
 
-            return Unit.Value;
+            return Unit.Task;
         }
     }
 }

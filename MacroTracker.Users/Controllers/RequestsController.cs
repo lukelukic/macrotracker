@@ -27,7 +27,7 @@ namespace MacroTracker.Users.Api.Controllers
             {
                 return NotFound(e.Message);
             }
-            catch (EntityAlreadyExists e)
+            catch (EntityAlreadyExistsException e)
             {
                 return Conflict(e.Message);
             }
@@ -40,11 +40,13 @@ namespace MacroTracker.Users.Api.Controllers
         [HttpPost("api/v1/requests/{requestId}/accept")]
         public void Accept(Guid requestId)
         {
+            throw new NotSupportedException();
         }
 
         [HttpPost("api/v1/requests/{requestId}/decline")]
         public void Decline(Guid requestId)
         {
+            throw new NotSupportedException();
         }
     }
 }

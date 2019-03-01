@@ -25,7 +25,7 @@ namespace MacroTracker.Users.Application.UseCases.Users.SendTrainingRequest
             _eventBus = eventBus;
         }
 
-        public async Task<Unit> Handle(SendTrainingRequestRequest request, CancellationToken cancellationToken)
+        public Task<Unit> Handle(SendTrainingRequestRequest request, CancellationToken cancellationToken)
         {
             var user = _userRepo.Get(request.UserId);
             if (user == null)
@@ -35,8 +35,8 @@ namespace MacroTracker.Users.Application.UseCases.Users.SendTrainingRequest
             if (trainer == null)
                 throw new EntityNotFoundException(request.TrainerId, "Trainer");
 
-            if (_requestRepo.Get(r => r.TrainerId == request.TrainerId && r.UserId == r.UserId && r.IsActive).Any())
-                throw new EntityAlreadyExists("Request to this trainer has already been sent and is waiting for response.");
+            if (_requestRepo.Get(r => r.TrainerId == request.TrainerId && r.UserId == request.UserId && r.IsActive).Any())
+                throw new EntityAlreadyExistsException("Request to this trainer has already been sent and is waiting for response.");
 
             _requestRepo.Add(new TrainingRequest
             {
@@ -54,7 +54,7 @@ namespace MacroTracker.Users.Application.UseCases.Users.SendTrainingRequest
                 UserUsername = user.Username
             });
 
-            return Unit.Value;
+            return Unit.Task;
         }
     }
 }

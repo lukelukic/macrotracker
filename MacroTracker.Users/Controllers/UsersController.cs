@@ -25,7 +25,7 @@ namespace MacroTracker.Users.Controllers
                 await Mediator.Send(model);
                 return Ok();
             }
-            catch (EntityAlreadyExists e)
+            catch (EntityAlreadyExistsException e)
             {
                 return UnprocessableEntity(e.Message);
             }

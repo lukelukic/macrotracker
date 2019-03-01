@@ -22,15 +22,15 @@ namespace MacroTracker.Users.Application.UseCases.RegisterTrainer
             _repo = repo;
         }
 
-        public async Task<Unit> Handle(RegisterTrainerRequest request, CancellationToken cancellationToken)
+        public Task<Unit> Handle(RegisterTrainerRequest request, CancellationToken cancellationToken)
         {
             if (_repo.Get(u => u.Email == request.Email).Any())
-                throw new EntityAlreadyExists($"{request.Email} is already in use.");
+                throw new EntityAlreadyExistsException($"{request.Email} is already in use.");
 
             if (_repo.Get(u => u.Username == request.Username).Any())
-                throw new EntityAlreadyExists($"{request.Username} is already in use.");
+                throw new EntityAlreadyExistsException($"{request.Username} is already in use.");
 
-            var user = _repo.Add(new Trainer
+            _repo.Add(new Trainer
             {
                 Username = request.Username,
                 Password = request.Password,
@@ -47,7 +47,7 @@ namespace MacroTracker.Users.Application.UseCases.RegisterTrainer
                 LastName = request.LastName,
                 Username = request.Username
             });
-            return Unit.Value;
+            return Unit.Task;
         }
     }
 }

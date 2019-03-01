@@ -1,0 +1,13 @@
+ç
+ÉD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\EntityConfigurations\TrainerConfiguration.csutf-8ï
+ãD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\EntityConfigurations\TrainingRequestConfiguration.csutf-8ä
+ÄD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\EntityConfigurations\UserConfiguration.csutf-8
+vD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Extensions\ContextExtensions.csutf-8Ñ
+{D:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Migrations\20190106203625_Initial.csutf-8é
+ÑD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Migrations\20190120133809_cascade-restrict.csutf-8í
+àD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Migrations\20190124160315_added-requests-table.csutf-8É
+zD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Repositories\EfGenericRepository.csutf-8É
+zD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Repositories\EfTrainerRepository.csutf-8å
+ÇD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Repositories\EfTrainingRequestRepository.csutf-8Ä
+wD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\Repositories\EfUserRepository.csutf-8q
+hD:\macrotracker\MacroTracker\Macrotracker.Users.Infrastructure\DataAccess\EfDataAccess\UsersDbContext.csutf-8

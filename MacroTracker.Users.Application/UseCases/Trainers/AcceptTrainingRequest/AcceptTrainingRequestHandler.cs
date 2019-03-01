@@ -13,6 +13,13 @@ namespace MacroTracker.Users.Application.UseCases.Trainers.AcceptTrainingRequest
         private readonly ITrainerRepository _trainerRepo;
         private readonly ITrainingRequestRepository _requestRepo;
 
+        public AcceptTrainingRequestHandler(IEventBus bus, ITrainerRepository trainerRepo, ITrainingRequestRepository requestRepo)
+        {
+            _bus = bus;
+            _trainerRepo = trainerRepo;
+            _requestRepo = requestRepo;
+        }
+
         public Task<Unit> Handle(AcceptTrainingRequest request, CancellationToken cancellationToken)
         {
             _trainerRepo.AcceptTrainingRequest(request.RequestId);

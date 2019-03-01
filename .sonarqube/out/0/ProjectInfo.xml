@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>EventBus</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>d6f20b1f-7572-4958-810f-0c8a5d7be55a</ProjectGuid>
+  <FullPath>D:\macrotracker\MacroTracker\EventTypes\EventBus.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\macrotracker\MacroTracker\.sonarqube\out\0\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">D:\macrotracker\MacroTracker\EventTypes\bin\Debug\netcoreapp2.2\EventBus.dll.RoslynCA.json|D:\macrotracker\MacroTracker\EventTypes\bin\Debug\netcoreapp2.2\EventBus.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">D:\macrotracker\MacroTracker\.sonarqube\out\0</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>netcoreapp2.2</TargetFramework>
+</ProjectInfo>

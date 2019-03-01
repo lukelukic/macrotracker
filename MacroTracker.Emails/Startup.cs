@@ -34,7 +34,7 @@ namespace MacroTracker.Emails
                 });
 
             services.Configure<EmailOptions>(options => Configuration.GetSection("Email").Bind(options));
-            services.AddTransient<IEmailSender, SmtpMailSender>();
+            services.AddTransient<IEmailSender, TestSender>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

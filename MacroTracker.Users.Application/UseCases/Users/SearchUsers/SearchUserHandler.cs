@@ -9,7 +9,7 @@ namespace MacroTracker.Users.Application.UseCases.SearchUsers
 {
     public class SearchUserHandler : IRequestHandler<SearchUsersRequest, IEnumerable<UserDto>>
     {
-        private IUserRepository _repo;
+        private readonly IUserRepository _repo;
 
         public SearchUserHandler(IUserRepository repo) => _repo = repo;
 

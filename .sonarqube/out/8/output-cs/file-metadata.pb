@@ -1,0 +1,11 @@
+R
+PD:\macrotracker\MacroTracker\MacroTracker.Users\Controllers\BaseApiController.csS
+QD:\macrotracker\MacroTracker\MacroTracker.Users\Controllers\RequestsController.csS
+QD:\macrotracker\MacroTracker\MacroTracker.Users\Controllers\TrainersController.csP
+ND:\macrotracker\MacroTracker\MacroTracker.Users\Controllers\UsersController.csM
+KD:\macrotracker\MacroTracker\MacroTracker.Users\Models\RegisterUserModel.cs<
+:D:\macrotracker\MacroTracker\MacroTracker.Users\Program.cs<
+:D:\macrotracker\MacroTracker\MacroTracker.Users\Startup.csS
+OC:\Users\Luka\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.csw
+sD:\macrotracker\MacroTracker\MacroTracker.Users\obj\Debug\netcoreapp2.2\MacroTracker.Users.Api.RazorAssemblyInfo.csr
+nD:\macrotracker\MacroTracker\MacroTracker.Users\obj\Debug\netcoreapp2.2\MacroTracker.Users.Api.AssemblyInfo.cs

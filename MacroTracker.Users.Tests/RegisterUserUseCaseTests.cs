@@ -36,7 +36,7 @@ namespace MacroTracker.Users.Tests
             var bus = new Mock<IEventBus>().Object;
             var handler = new RegisterUserHandler(bus, _repo);
 
-            await Assert.ThrowsAsync<EntityAlreadyExists>(() => handler.Handle(useCase, new CancellationToken()));
+            await Assert.ThrowsAsync<EntityAlreadyExistsException>(() => handler.Handle(useCase, new CancellationToken()));
         }
     }
 }

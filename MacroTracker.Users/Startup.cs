@@ -36,8 +36,8 @@ namespace MacroTracker.Users
             services.AddMediatR(typeof(RegisterUserUseCase));
             services.AddDbContext<UsersDbContext>(cfg =>
             {
-                var config = Configuration.GetSection("ConnectionStrings");
-                cfg.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=macrotracker-users;Integrated Security=True");
+                var connectionString = Configuration.GetSection("SqlConnection").Value;
+                cfg.UseSqlServer(connectionString);
             });
             services.AddTransient<ITrainerRepository, EfTrainerRepository>();
             services.AddTransient<IUserRepository, EfUserRepository>();

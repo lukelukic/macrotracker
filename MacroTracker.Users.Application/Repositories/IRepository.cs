@@ -7,7 +7,7 @@ namespace MacroTracker.Users.Application.Repositories
 {
     public interface IRepository<T> where T : Entity
     {
-        IEnumerable<T> Get(Expression<Func<T, bool>> predicate, int perPage = 50, int pageNumber = 1);
+        IEnumerable<T> Get(Expression<Func<T, bool>> predicate, int perPage, int pageNumber);
 
         IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
 

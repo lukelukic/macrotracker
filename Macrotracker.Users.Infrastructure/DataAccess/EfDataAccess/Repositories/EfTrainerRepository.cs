@@ -25,7 +25,7 @@ namespace Macrotracker.Users.Infrastructure.DataAccess.EfDataAccess.Repositories
                 throw new EntityNotFoundException(requestId, "TrainingRequest");
 
             if (request.Trainer.TrainerUsers.Any(tu => tu.UserId == request.UserId))
-                throw new EntityAlreadyExists("Trainer and user are already connected.");
+                throw new EntityAlreadyExistsException("Trainer and user are already connected.");
 
             var userTrainer = new TrainerUser
             {

@@ -7,7 +7,7 @@ namespace MacroTracker.DietaryData.Repository
     {
         protected IMongoCollection<T> MongoCollection { get; }
 
-        public AbstractMongoRepository(IConfiguration config)
+        protected AbstractMongoRepository(IConfiguration config)
         {
             var client = new MongoClient(config.GetConnectionString("MongoDb"));
             var database = client.GetDatabase(config.GetSection("Mongo")["DbName"]);

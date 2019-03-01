@@ -20,7 +20,6 @@ namespace MacroTracker.Emails.Senders
         public void Send()
         {
             var fromAddress = new MailAddress(_options.FromEmail, _options.FromName);
-            var toAddress = new MailAddress(ToEmail, Subject);
 
             var smtp = new SmtpClient
             {

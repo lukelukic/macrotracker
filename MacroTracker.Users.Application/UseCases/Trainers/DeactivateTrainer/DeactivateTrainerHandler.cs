@@ -9,8 +9,8 @@ namespace MacroTracker.Users.Application.UseCases.Trainers.DeactivateTrainer
 {
     public class DeactivateTrainerHandler : IRequestHandler<DeactivateTrainerRequest>
     {
-        private IEventBus _bus;
-        private ITrainerRepository _repo;
+        private readonly IEventBus _bus;
+        private readonly ITrainerRepository _repo;
 
         public DeactivateTrainerHandler(IEventBus bus, ITrainerRepository repo)
         {

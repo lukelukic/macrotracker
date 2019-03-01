@@ -49,7 +49,7 @@ namespace MacroTracker.DietaryData.Domain
             set
             {
                 if (value <= 0)
-                    throw new ArgumentOutOfRangeException("kcal");
+                    throw new ArgumentException("Kcal can't be less than 0.");
                 _kcal = value;
             }
         }

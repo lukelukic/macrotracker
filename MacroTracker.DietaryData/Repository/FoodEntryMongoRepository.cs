@@ -17,7 +17,7 @@ namespace MacroTracker.DietaryData.Repository
 
         protected override string CollectionName => "FoodCollection";
 
-        public void Delete(string id) => MongoCollection.DeleteOne(x => x.Id == ObjectId.Parse(id));
+        public void Delete(string objectId) => MongoCollection.DeleteOne(x => x.Id == ObjectId.Parse(objectId));
 
         public IEnumerable<FoodEntry> Get(Expression<Func<FoodEntry, bool>> predicate) => 
             MongoCollection

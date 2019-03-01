@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace MacroTracker.Users
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args) => CreateWebHostBuilder(args).Build().Run();
 

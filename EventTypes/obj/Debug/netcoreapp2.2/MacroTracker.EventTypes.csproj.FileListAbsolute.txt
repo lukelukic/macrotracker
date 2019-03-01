@@ -1,8 +1,0 @@
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\bin\Debug\netcoreapp2.2\MacroTracker.EventTypes.deps.json
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\bin\Debug\netcoreapp2.2\MacroTracker.EventTypes.dll
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\bin\Debug\netcoreapp2.2\MacroTracker.EventTypes.pdb
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\obj\Debug\netcoreapp2.2\MacroTracker.EventTypes.csproj.CoreCompileInputs.cache
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\obj\Debug\netcoreapp2.2\MacroTracker.EventTypes.AssemblyInfoInputs.cache
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\obj\Debug\netcoreapp2.2\MacroTracker.EventTypes.AssemblyInfo.cs
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\obj\Debug\netcoreapp2.2\MacroTracker.EventTypes.dll
-D:\macrotracker\MacroTracker\MacroTracker.EventTypes\obj\Debug\netcoreapp2.2\MacroTracker.EventTypes.pdb

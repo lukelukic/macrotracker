@@ -13,8 +13,6 @@ namespace MacroTracker.Emails.MailHandlers
 
         protected EmailHandler(TEvent @event) => _event = @event;
 
-        public string QueueName => GetType().Name;
-
         protected abstract string Body { get; }
         protected abstract string Subject { get; }
         protected abstract string ToEmail { get; }

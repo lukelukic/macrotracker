@@ -84,7 +84,7 @@ namespace MacroTracker.Users.Tests.Unit.AcceptTrainingRequestUseCase
 
             _trainerRepository = new EfTrainerRepository(context);
 
-            Assert.Throws<EntityAlreadyExists>(() => _trainerRepository.AcceptTrainingRequest(requestId));
+            Assert.Throws<EntityAlreadyExistsException>(() => _trainerRepository.AcceptTrainingRequest(requestId));
         }
 
         private UsersDbContext GetContext()
