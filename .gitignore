@@ -101,6 +101,8 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
+.sonarqube
+
 # JustCode is a .NET coding add-in
 .JustCode
 
@@ -266,4 +268,5 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+
 
