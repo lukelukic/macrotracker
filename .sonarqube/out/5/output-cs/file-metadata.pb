@@ -1,9 +1,0 @@
-N
-LD:\macrotracker\MacroTracker\MacroTracker.Users.Domain\Concepts\RoleTypes.csK
-ID:\macrotracker\MacroTracker\MacroTracker.Users.Domain\Entities\Entity.csL
-JD:\macrotracker\MacroTracker\MacroTracker.Users.Domain\Entities\Trainer.csP
-ND:\macrotracker\MacroTracker\MacroTracker.Users.Domain\Entities\TrainerUser.csT
-RD:\macrotracker\MacroTracker\MacroTracker.Users.Domain\Entities\TrainingRequest.csI
-GD:\macrotracker\MacroTracker\MacroTracker.Users.Domain\Entities\User.csS
-OC:\Users\Luka\AppData\Local\Temp\.NETCoreApp,Version=v2.2.AssemblyAttributes.cs|
-xD:\macrotracker\MacroTracker\MacroTracker.Users.Domain\obj\Debug\netcoreapp2.2\MacroTracker.Users.Domain.AssemblyInfo.cs

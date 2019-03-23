@@ -1,7 +1,0 @@
-organization=lukelukic-github
-projectKey=lukelukic_macrotracker
-serverUrl=https://sonarcloud.io
-serverVersion=7.7.0.22107
-dashboardUrl=https://sonarcloud.io/dashboard?id=lukelukic_macrotracker
-ceTaskId=AWkgR9jHzuesSb3rwMnV
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWkgR9jHzuesSb3rwMnV
