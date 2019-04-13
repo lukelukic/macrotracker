@@ -18,8 +18,12 @@ namespace MacroTracker.Users.Application.UseCases.Users.UpdateUserUseCase
         public Task<Unit> Handle(UpdateUserRequest request, CancellationToken cancellationToken)
         {
             var user = _repo.Get(request.UserId);
+
+            if (user == null)
+                throw new EntityNotFoundException(request.UserId, "User");
+
             if (!user.IsActive)
-                throw new EntityNotFoundException(user.Id, "User");
+                throw new EntityInactiveException($"User with an id of {request.UserId} is inactive.");
 
             user.Email = request.Email;
             user.FirstName = request.FirstName;

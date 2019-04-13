@@ -19,9 +19,9 @@ namespace MacroTracker.DietaryData.Controllers
 
         [Route("api/entries")]
         [HttpGet]
-        public ActionResult<IEnumerable<FoodEntry>> Get([FromQuery] DietaryDataQuery query)
+        public ActionResult<IEnumerable<FoodEntryModel>> Get([FromQuery] DietaryDataQuery query)
         {
-            var items = _repo.Get(f => f.AddedDate > query.StartDate && f.AddedDate < query.EndDate && f.UserId == query.UserId);
+            var items = _repo.Get(query);
             return Ok(items);
         }
 
@@ -29,7 +29,7 @@ namespace MacroTracker.DietaryData.Controllers
         [HttpPost("api/entries/{userId}")]
         public void Post(string userId, [FromBody] MacronutrientModel model)
         {
-            var entry = new FoodEntry
+            var entry = new FoodEntryModel
             {
                 Protein = model.Protein,
                 Fat = model.Fat,
@@ -41,11 +41,11 @@ namespace MacroTracker.DietaryData.Controllers
             _repo.Insert(entry);
         }
 
-        [HttpDelete("api/entries/{userId}/{entryId}")]
-        public IActionResult Delete(string userId, string entryId)
+        [HttpDelete("api/entries/{entryId}")]
+        public IActionResult Delete(string entryId)
         {
-            if (!_repo.Get(e => e.UserId == userId && e.Id == ObjectId.Parse(entryId)).Any())
-                return NotFound($"Entry with provided id doesn't exist or doesn't belong to specified user.");
+            if (!_repo.Get(e => e.Id == ObjectId.Parse(entryId)).Any())
+                return NotFound($"Entry with provided id doesn't exist.");
 
             _repo.Delete(entryId);
             return NoContent();
@@ -57,7 +57,7 @@ namespace MacroTracker.DietaryData.Controllers
             try
             {
                 var food = new Food(calories);
-                _repo.Insert(new FoodEntry
+                _repo.Insert(new FoodEntryModel
                 {
                     KCal = food.Kcal,
                     AddedDate = DateTime.Now,
@@ -71,27 +71,29 @@ namespace MacroTracker.DietaryData.Controllers
             }
         }
 
-        [HttpGet("api/entries/{userId}/{entryId}")]
-        public IActionResult Get(string userId, string entryId)
+        [HttpGet("api/entries/{entryId}")]
+        public IActionResult Get(string entryId)
         {
-            var item = _repo.Find(userId, entryId);
+            var item = _repo.Find(entryId);
             return item == null ? NotFound() : (IActionResult)Ok(item);
         }
 
-        [HttpPut("api/entries/{userId}/{entryId}")]
-        public IActionResult Put(string userId, string entryId, [FromBody]MacronutrientModel model)
+        [HttpPut("api/entries/{entryId}")]
+        public IActionResult Put(string entryId, [FromBody]MacronutrientModel model)
         {
-            if (_repo.Find(userId, entryId) == null)
-                return NotFound($"Entry with provided id doesn't exist or doesn't belong to specified user.");
+            var previousEntry = _repo.Find(entryId);
+            if (previousEntry == null)
+                return NotFound($"Entry with provided id doesn't exist.");
 
-            var entry = new FoodEntry
+            var entry = new FoodEntryModel
             {
                 Id = ObjectId.Parse(entryId),
                 Fat = model.Fat,
                 Carbohydrate = model.Carbohydrate,
                 Protein = model.Protein,
                 KCal = model.TotalKcal,
-                UserId = userId
+                UserId = previousEntry.UserId,
+                AddedDate = previousEntry.AddedDate
             };
 
             _repo.Update(entry);

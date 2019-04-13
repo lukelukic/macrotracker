@@ -2,8 +2,8 @@
 
 namespace MacroTracker.DietaryData.Repository
 {
-    public interface IFoodEntryRepository : IRepository<FoodEntry>
+    public interface IFoodEntryRepository : IRepository<FoodEntryModel>
     {
-        FoodEntry Find(string userId, string entryId);
+        FoodEntryModel Find(string entryId);
     }
 }

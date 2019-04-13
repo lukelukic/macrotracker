@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MacroTracker.DietaryData.Models
 {
-    public class FoodEntry
+    public class FoodEntryModel
     {
         [BsonElement]
         public DateTime AddedDate { get; set; }

@@ -1,0 +1,28 @@
+1. Write Tests for controllers and make an appointment with professor
+2. Add suport for measurements - weigth, thigh size, chest size, stomach size
+3. Add support for goals - weigth, thigh size, chest size, stomach size
+4. On adding measurements, if one of goals is accomplished, publish a notification and send it to the user
+5. Create notifications service to use mongo as well
+   - Notification <DateCreated, IsRead, Message, UserId, Type(success, warning, error, info)>
+   - Add, GetAll, Delete(set IsRead to false)
+6. Create food service that will hold food information
+   - Anyone can add new food type
+   - Anyone can search for food and get paged response (by name)
+   - To use food information, it has to be converted either to calories or macros and sent to DietaryData service
+7. Integrate sonarcloud
+8. Create some arbitrary gui app for the purpose of presentation - jquery & ajax 
+9. Implement JWT 
+10. Add jmeter to test many requests per unit of time
+
+
+Use-Cases
+1. Trainer should be able to get a list of all user under his trainee
+2. User should be able to get a list of his trainers
+3. Trainer should be able to see inake for specific user he trainers
+4. User should be able to see his data
+5. Notifications:
+    - User registered - add notification for welcome message, send an welcome email
+    - User reached a goal - send an email and add success message
+    - User connected to trainer - send an email and add success message
+    - User tracked data for 5, 10, 25, 100, 365 days - info notification
+    - User added record to the daily data - notification to trainer?

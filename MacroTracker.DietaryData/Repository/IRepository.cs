@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MacroTracker.DietaryData.Queries;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
@@ -13,5 +14,6 @@ namespace MacroTracker.DietaryData.Repository
         void Delete(string objectId);
 
         IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> predicate);
+        IEnumerable<TEntity> Get(BaseQuery<TEntity> entity);
     }
 }

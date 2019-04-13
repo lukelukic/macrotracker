@@ -1,5 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MacroTracker.DietaryData.Queries;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace MacroTracker.DietaryData.Repository
 {
@@ -14,6 +17,17 @@ namespace MacroTracker.DietaryData.Repository
             MongoCollection = database.GetCollection<T>(CollectionName);
         }
 
+        protected AbstractMongoRepository(string connectionString, string DbName)
+        {
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(DbName);
+            MongoCollection = database.GetCollection<T>(CollectionName);
+        }
+
         protected abstract string CollectionName { get; }
+
+        public IEnumerable<T> Get(BaseQuery<T> query) => MongoCollection
+            .Find(query.GetQuery)
+            .ToList();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using EventBus;
 using EventBus.Events;
+using MacroTracker.Users.Application.Exceptions;
 using MacroTracker.Users.Application.Repositories;
 using MediatR;
 using System.Threading;
@@ -21,8 +22,12 @@ namespace MacroTracker.Users.Application.UseCases.Trainers.DeactivateTrainer
         public Task<Unit> Handle(DeactivateTrainerRequest request, CancellationToken cancellationToken)
         {
             var trainer = _repo.Get(request.TrainerId);
+
+            if (trainer == null)
+                throw new EntityNotFoundException(request.TrainerId, "Trainer");
+
             if (!trainer.IsActive)
-                throw new UserAlreadyInactiveException($"User {trainer.Username} is already inactive.");
+                throw new EntityInactiveException($"User {trainer.Username} is already inactive.");
 
             trainer.IsActive = false;
             _repo.Update(trainer);

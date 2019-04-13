@@ -9,28 +9,32 @@ using System.Linq.Expressions;
 
 namespace MacroTracker.DietaryData.Repository
 {
-    public class FoodEntryMongoRepository : AbstractMongoRepository<FoodEntry>, IFoodEntryRepository
+    public class FoodEntryMongoRepository : AbstractMongoRepository<FoodEntryModel>, IFoodEntryRepository
     {
         public FoodEntryMongoRepository(IConfiguration config) : base(config)
         {
         }
 
+        public FoodEntryMongoRepository(string connectionString, string dbName) : base(connectionString, dbName)
+        {
+
+        }
         protected override string CollectionName => "FoodCollection";
 
         public void Delete(string objectId) => MongoCollection.DeleteOne(x => x.Id == ObjectId.Parse(objectId));
 
-        public IEnumerable<FoodEntry> Get(Expression<Func<FoodEntry, bool>> predicate) => 
+        public IEnumerable<FoodEntryModel> Get(Expression<Func<FoodEntryModel, bool>> predicate) => 
             MongoCollection
             .Find(predicate)
             .ToList();
 
-        public void Insert(FoodEntry entity) => MongoCollection.InsertOne(entity);
+        public void Insert(FoodEntryModel entity) => MongoCollection.InsertOne(entity);
 
-        public void Update(FoodEntry entity) => MongoCollection.ReplaceOne(e => e.Id == entity.Id, entity);
+        public void Update(FoodEntryModel entity) => MongoCollection.ReplaceOne(e => e.Id == entity.Id, entity);
 
-        public FoodEntry Find(string userId, string entryId) =>
+        public FoodEntryModel Find(string entryId) =>
             MongoCollection
-            .Find(e => e.Id == ObjectId.Parse(entryId) && e.UserId == userId)
+            .Find(e => e.Id == ObjectId.Parse(entryId))
             .FirstOrDefault();
     }
 }

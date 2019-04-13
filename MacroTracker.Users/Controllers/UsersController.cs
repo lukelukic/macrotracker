@@ -32,7 +32,7 @@ namespace MacroTracker.Users.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get([FromQuery] SearchUsersRequest request)
+        public IActionResult Get([FromQuery] SearchUsersQuery request)
         {
             try
             {

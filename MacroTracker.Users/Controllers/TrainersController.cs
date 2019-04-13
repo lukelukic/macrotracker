@@ -63,7 +63,7 @@ namespace MacroTracker.Users.Api.Controllers
                 });
                 return NoContent();
             }
-            catch (UserAlreadyInactiveException e)
+            catch (EntityInactiveException e)
             {
                 return BadRequest(e.Message);
             }

@@ -9,9 +9,9 @@ using System.Linq;
 using TestSupport.EfHelpers;
 using Xunit;
 
-namespace MacroTracker.Users.Tests.Unit.AcceptTrainingRequestUseCase
+namespace MacroTracker.Users.Tests.Unit.Infrastructure.Repository
 {
-    public class AcceptTrainingRequestUseTest : EfSqlLiteTest
+    public class EfTrainerRepository : EfSqlLiteTest
     {
         private ITrainerRepository _trainerRepository;
 
@@ -32,7 +32,7 @@ namespace MacroTracker.Users.Tests.Unit.AcceptTrainingRequestUseCase
 
             var requestId = context.TrainingRequests.First().Id;
 
-            _trainerRepository = new EfTrainerRepository(context);
+            _trainerRepository = new Macrotracker.Users.Infrastructure.DataAccess.EfDataAccess.Repositories.EfTrainerRepository(context);
 
             _trainerRepository.AcceptTrainingRequest(requestId);
 
@@ -51,7 +51,7 @@ namespace MacroTracker.Users.Tests.Unit.AcceptTrainingRequestUseCase
         [Fact]
         public void ThrowsExceptionWhenRequestedGuidDoesntExist()
         {
-            _trainerRepository = new EfTrainerRepository(GetContext());
+            _trainerRepository = new Macrotracker.Users.Infrastructure.DataAccess.EfDataAccess.Repositories.EfTrainerRepository(GetContext());
 
             Assert.Throws<EntityNotFoundException>(() => _trainerRepository.AcceptTrainingRequest(new Guid()));
         }
@@ -82,7 +82,7 @@ namespace MacroTracker.Users.Tests.Unit.AcceptTrainingRequestUseCase
 
             var requestId = context.TrainingRequests.First().Id;
 
-            _trainerRepository = new EfTrainerRepository(context);
+            _trainerRepository = new Macrotracker.Users.Infrastructure.DataAccess.EfDataAccess.Repositories.EfTrainerRepository(context);
 
             Assert.Throws<EntityAlreadyExistsException>(() => _trainerRepository.AcceptTrainingRequest(requestId));
         }
