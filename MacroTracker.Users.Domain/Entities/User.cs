@@ -1,8 +1,10 @@
 ﻿using MacroTracker.Users.Domain.Entities;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MacroTracker.Users.Domain
 {
+    [ExcludeFromCodeCoverage]
     public class User : Entity
     {
         public string FirstName { get; set; }

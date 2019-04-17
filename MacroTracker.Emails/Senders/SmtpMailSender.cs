@@ -1,6 +1,7 @@
 ﻿using MacroTracker.Emails.Interfaces;
 using MacroTracker.Emails.Options;
 using Microsoft.Extensions.Options;
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Net.Mail;
 
@@ -14,7 +15,7 @@ namespace MacroTracker.Emails.Senders
         public string Body { get; set; }
 
         public SmtpMailSender(EmailOptions options) => _options = options;
-
+        [ExcludeFromCodeCoverage]
         public SmtpMailSender(IOptions<EmailOptions> options) => _options = options.Value;
 
         public void Send()

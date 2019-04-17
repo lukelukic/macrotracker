@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace MacroTracker.DietaryData
 {
+    [ExcludeFromCodeCoverage]
     public static class Program
     {
         public static void Main(string[] args) => CreateWebHostBuilder(args).Build().Run();

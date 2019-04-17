@@ -1,4 +1,5 @@
-1. Write Tests for controllers and make an appointment with professor
+1. Tests for dietary data controllers
+2. Ignore untested block for other projects from code coverage
 2. Add suport for measurements - weigth, thigh size, chest size, stomach size
 3. Add support for goals - weigth, thigh size, chest size, stomach size
 4. On adding measurements, if one of goals is accomplished, publish a notification and send it to the user

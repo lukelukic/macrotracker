@@ -1,4 +1,4 @@
-﻿using MacroTracker.DietaryData.Domain;
+﻿using MacroTracker.DietaryData.Calculation;
 using MacroTracker.DietaryData.Models;
 using MacroTracker.DietaryData.Queries;
 using MacroTracker.DietaryData.Repository;
@@ -56,10 +56,9 @@ namespace MacroTracker.DietaryData.Controllers
         {
             try
             {
-                var food = new Food(calories);
                 _repo.Insert(new FoodEntryModel
                 {
-                    KCal = food.Kcal,
+                    KCal = calories,
                     AddedDate = DateTime.Now,
                     UserId = userId
                 });

@@ -35,7 +35,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macrotracker.Users.Infrastr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacroTracker.Users.Tests", "MacroTracker.Users.Tests\MacroTracker.Users.Tests.csproj", "{279F7DD7-CCCB-4279-B061-5ECEA9C1279B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macrotracker.DietaryData.Tests", "Macrotracker.DietaryData.Tests\Macrotracker.DietaryData.Tests.csproj", "{11549512-F2AE-4A58-B6BC-A5CD9617111B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macrotracker.DietaryData.Tests", "Macrotracker.DietaryData.Tests\Macrotracker.DietaryData.Tests.csproj", "{11549512-F2AE-4A58-B6BC-A5CD9617111B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B13CFA71-1CE4-49A3-867C-0C32BACFC5F3}"
+	ProjectSection(SolutionItems) = preProject
+		CoverageRunsettings.runsettings = CoverageRunsettings.runsettings
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

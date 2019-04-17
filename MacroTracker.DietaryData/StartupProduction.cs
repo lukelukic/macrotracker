@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MacroTracker.DietaryData
 {
+    [ExcludeFromCodeCoverage]
     public class StartupProduction
     {
         public StartupProduction(IConfiguration configuration)

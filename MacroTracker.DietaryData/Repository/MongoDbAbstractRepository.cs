@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MacroTracker.DietaryData.Repository
 {
@@ -10,6 +11,7 @@ namespace MacroTracker.DietaryData.Repository
     {
         protected IMongoCollection<T> MongoCollection { get; }
 
+        [ExcludeFromCodeCoverage]
         protected AbstractMongoRepository(IConfiguration config)
         {
             var client = new MongoClient(config.GetConnectionString("MongoDb"));

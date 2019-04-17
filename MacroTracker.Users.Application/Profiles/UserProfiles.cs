@@ -3,9 +3,11 @@ using MacroTracker.Users.Application.UseCases;
 using MacroTracker.Users.Application.UseCases.SearchUsers;
 using MacroTracker.Users.Application.UseCases.Users;
 using MacroTracker.Users.Domain;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MacroTracker.Users.Application.Profiles
 {
+    [ExcludeFromCodeCoverage]
     public class UserProfiles : Profile
     {
         public UserProfiles()

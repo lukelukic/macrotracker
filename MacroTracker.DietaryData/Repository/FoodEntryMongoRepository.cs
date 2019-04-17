@@ -4,6 +4,7 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -11,6 +12,7 @@ namespace MacroTracker.DietaryData.Repository
 {
     public class FoodEntryMongoRepository : AbstractMongoRepository<FoodEntryModel>, IFoodEntryRepository
     {
+        [ExcludeFromCodeCoverage]
         public FoodEntryMongoRepository(IConfiguration config) : base(config)
         {
         }
